@@ -20,7 +20,7 @@ function Home() {
         // const res=await axios.get('./jobs.json')
         console.log(res.data);
         
-        setjobdatas(res.data.jobs)
+        setjobdatas(res.data?.jobs)
 
       } catch (error) {
         console.log(error);
@@ -32,7 +32,7 @@ function Home() {
     const getcompanise=async ()=>{
       try {
         const res=await axios.get("http://localhost:4000/companise",{}, { withCredentials: true });
-        setCompnise(res.data)
+        setCompnise(res?.data)
         // console.log('res.data', res.data)
         
       } catch (error) {

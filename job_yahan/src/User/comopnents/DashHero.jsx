@@ -43,7 +43,7 @@ function DashHero({ activeSection, onSidebarClick, jobs }) {
       {},
       { withCredentials: true }
     );
-    setallappliedsjob(res.data.application);
+    setallappliedsjob(res.data?.application);
     // setapplyjob(res.data.application.length);
   };
   
@@ -65,10 +65,10 @@ function DashHero({ activeSection, onSidebarClick, jobs }) {
   
 
   const getalljobs = async () => {
-    await setjobsall(jobs.jobs.jobs.length);
+    await setjobsall(jobs.jobs.jobs?.length);
   };
-  console.log(applyjobsall);
-  console.log(allaplidjobs);
+  // console.log(applyjobsall);
+  // console.log(allaplidjobs);
   return (
     <div className="w-full h-full">
       <div className="flex items-center  gap-6 mt-4">
@@ -76,7 +76,7 @@ function DashHero({ activeSection, onSidebarClick, jobs }) {
           onClick={() => handelacrive("Applied")}
           className="w-1/3 flex items-center bg-indigo-800 text-white px-3 py-5 justify-around"
         >
-          <div className="text-5xl font-bold">{allaplidjobs.length}</div>
+          <div className="text-5xl font-bold">{allaplidjobs?.length}</div>
           <div className="text-xl px-4 ">All Applide jobs</div>
           {activeSection === "Applied" ? <Arrowdown /> : <Arrowright />}
         </div>

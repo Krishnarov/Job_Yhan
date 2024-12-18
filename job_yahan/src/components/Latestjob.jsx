@@ -22,34 +22,34 @@ function Latestjob(props) {
                 <img
                 className="h-14 "
                   src={`http://localhost:4000/public/${
-                    item.company === null ? null : item.company.logo
+                    item?.company === null ? null : item.company?.logo
                   }`}
                 />
               </div>
               <div>
-                <h2 className="text-xl font-bold mb-2">{item.title}</h2>
+                <h2 className="text-xl font-bold mb-2">{item?.title}</h2>
                 <p>
-                  {item.company.name} . {item.address}
+                  {item.company?.name} . {item?.address}
                 </p>
                 <div className="flex items-center flex-wrap md:flex-nowrap gap-4 mt-4">
                   {item.skills[0] ? (
                     <div className="px-3 py-1 bg-pink-100 text-pink-700 rounded-2xl">
-                      {item.skills[0]}
+                      {item?.skills[0]}
                     </div>
                   ) : null}
-                  {item.skills[1] ? (
+                  {item?.skills[1] ? (
                     <div className="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-2xl">
-                      {item.skills[1]}
+                      {item?.skills[1]}
                     </div>
                   ) : null}
-                  {item.skills[2] ? (
+                  {item?.skills[2] ? (
                     <div className="px-3 py-1 bg-blue-100 text-blue-700 rounded-2xl">
                       {item.skills[2]}
                     </div>
                   ) : null}
-                  {item.skills[3] ? (
+                  {item?.skills[3] ? (
                     <div className="px-3 py-1 bg-green-100 text-green-700 rounded-2xl">
-                      {item.skills[3]}
+                      {item?.skills[3]}
                     </div>
                   ) : null}
                 </div>

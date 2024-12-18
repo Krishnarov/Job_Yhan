@@ -27,7 +27,7 @@ function App() {
   <Route path='/users/dashbord' element={<Users />}/>
   {/* <Route path='/users/dashboard/applidjob' element={<ApplideJobs />}/> */}
   {/* <Route path='/users/joblisting' element={<Joblisting />}/> */}
-<Route path='/recruiter' element={<Recruiter/>}/>
+{/* <Route path='/recruiter' element={<Recruiter/>}/> */}
 {/* <Route path='/recruiter/create' element={<Create/>}/> */}
 </Routes>
 </BrowserRouter>

@@ -25,7 +25,7 @@ function Signup() {
         userinfo
       );
       if (res.status === 200) {
-        console.log(res.data);
+        console.log(res?.data);
 
         Swal.fire({
           position: "top-end",

@@ -11,7 +11,7 @@ function User() {
         const res = await axios.get("http://localhost:4000/jobs/getalljob",{},{withCredentials: true});
         console.log(res.data);
         
-        setjobdatas(res.data);
+        setjobdatas(res?.data);
       } catch (error) {
         console.log(error);
       }
