@@ -1,8 +1,8 @@
 .bg-i-hero{
-    background-image: url('./images/image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('./images/image.png')no-repeat center center/cover fixed;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
 
 /* height: 100%; */
 
@@ -10,17 +10,16 @@
 .hover-catgri:hover{
 background-color: #4F46E5;
 color:white;
-transition: all 0.6s ;
+transition: all 0.3s ease-in-out;
 }
-.hover-catgri:hover div {
+/* .hover-catgri:hover div {
     color: white;
     border-color: white
     ;
-}
+} */
 .hover-catgri:hover div p{
     color: white;
-    border-color: white
-    ;
+    border-color: white;
 }
 
 .coener-div{
@@ -33,14 +32,7 @@ transition: all 0.6s ;
     transform: rotate(327deg);
     
 }
-.top-div{
-    top: -47px;
-    left: 54px;
-}
-.bottom-div{
-    bottom: -27px;
-    right: 55px;
-}
+
 .cornor-hero-div{
     position: absolute;
     z-index: 1;
@@ -53,3 +45,4 @@ transition: all 0.6s ;
 
 
 }
+
